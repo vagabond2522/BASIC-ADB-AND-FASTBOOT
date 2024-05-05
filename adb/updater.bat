@@ -1,5 +1,5 @@
 @echo off
-Title BASIC ADB & FASTBOOT UPDATER
+Title BASIC ADB AND FASTBOOT UPDATER
 :note1
 echo Hi! This Updater was created on 05.05.2024 and it's not updated very often.
 echo So, please check my github to check if I updated ADB version on the update repo.
@@ -18,7 +18,7 @@ cls
 
 :Internet_check
 echo Checking your internet connection...
-ping www.google.com -n 1 -w 1000
+ping www.google.com -n 1 -w 1000>nul
 if errorlevel 1 (
     goto no_internet
 ) else (
@@ -31,7 +31,7 @@ echo Press any key to exit.
 pause>nul
 exit
 
-:install
+:update
 echo Ok, lets update your android tools!
 echo The updater will use this server:
 echo https://raw.githubusercontent.com/Mihot7/BAAF-UPDATE-SERVER/main/
